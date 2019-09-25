@@ -46,4 +46,4 @@ db.sequelize.sync(syncOptions).then(function () {
 
 module.exports = app;
 
-console.log('server.js', 'TESTING')
+console.log('server.js', 'TESTING TESTING')
