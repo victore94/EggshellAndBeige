@@ -1,3 +1,186 @@
+
+body {
+  margin: 0;
+  height: 200vh;
+  background-color: #ffffff;
+  /* cursor: none; */
+}
+canvas {
+  display: block;
+}
+
+/* Gradient overlay */
+
+/* 
+.head-overlay {
+  position: absolute;
+  width: 100%;
+
+  height: 400px;
+  
+} */
+
+
+/* Main container & contents */
+
+
+.main-container {
+  position: absolute;
+   width: 100%;
+   top: 0%;
+   left: 0%;
+   height: 500px;
+   z-index: 1;
+   background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.788) -18.5%, rgba(0, 0, 0, 0.08) 177%);
+   transform: translate(-50%,-50%);
+   overflow: hidden;
+}
+
+ul{
+  position: absolute;
+  width: 800px; height: 50px;
+  top: 3.5%; left: 15.5%;
+  padding: 0px ;
+  list-style: none;
+
+  
+}
+
+li{
+  position: relative;
+  display: inline-table;
+  padding: 0 46px;
+  color: #fff;
+}
+
+.logo {
+  position: absolute;
+  top: 8%;
+  left: 13%;
+  width: 26px;
+  height: 40px;
+}
+
+.img {
+   height: 400px;
+   width: 100%;
+   position: absolute;
+   left: 0%;
+   transform: translateX(-50%);
+}
+
+
 .list-group-item {
   line-height: 2.5;
+}
+
+.btn-contain {
+  text-align: center;
+  margin-top: 26em;
+
+}
+
+.bttn-mix {
+  position: absolute;
+  left: 18%;
+  top: 68%;
+  text-align: center;
+  border-radius: 40px;
+  width: 100px;
+  background: linear-gradient(180deg, #10BF8B -33.72%, #0FB0BA 129.07%);
+  box-shadow: 0px 24px 84px rgba(0, 0, 0, 0.801); 
+  border-style: none;
+}
+
+
+.nav {
+  display: inline-table;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  top: 9.5%;
+  left: 18%;
+
+
+}
+
+
+
+
+.home {
+
+
+    font-family: 'Montesserat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+     position: absolute;
+     background: none;
+     z-index: 2;
+     color: white;
+    
+    
+
+}
+
+.featured {
+  
+  font-family: 'Montesserat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+     position: absolute;
+     margin-left: -10px;
+     background: none;
+     z-index: 2;
+     color: white;
+
+
+}
+
+.abt-us {
+
+  font-family: 'Montesserat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+     position: absolute;
+     width: 70px;
+     background: none;
+     z-index: 2;
+     color: white;
+
+
+}
+
+.maintxt {
+  top: 25%;
+  left: 18%;
+  color: white;
+  background: none;
+  position: absolute;
+  z-index: 2;
+  font-family: 'Montserrat ', sans-serif;
+  font-size: 50px;
+  letter-spacing: -2px;
+  font-weight: 800;
+}
+
+.subtxt { 
+  top: 44%;
+  left: 18%;
+  color: white;
+  background: none;
+  position: absolute;
+  z-index: 2;
+  font-family: 'Lora', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.strt-mix {
+  
+  font-family: 'Montesserat', sans-serif;
+   font-size: 10px;
+   letter-spacing: -7;
+   color: #ffffff;
+   font-weight: bolder;
 }
