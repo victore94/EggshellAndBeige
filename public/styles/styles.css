@@ -1,7 +1,7 @@
 
 body {
   margin: 0;
-  height: 200vh;
+  height: 220vh;
   background-color: #ffffff;
   /* cursor: none; */
 }
@@ -29,7 +29,7 @@ canvas {
    width: 100%;
    top: 0%;
    left: 0%;
-   height: 500px;
+   height: 100%;
    z-index: 1;
    background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.788) -18.5%, rgba(0, 0, 0, 0.08) 177%);
    transform: translate(-50%,-50%);
@@ -46,6 +46,14 @@ ul{
   
 }
 
+.log-sign {
+  position: absolute;
+  width: 200px; height: 50px;
+  top: 3.5%; left: 68%;
+  padding: 0px ;
+  list-style: none;
+}
+
 li{
   position: relative;
   display: inline-table;
@@ -55,18 +63,26 @@ li{
 
 .logo {
   position: absolute;
-  top: 8%;
-  left: 13%;
+  top: 6.3%;
+  left: 15%;
   width: 26px;
   height: 40px;
 }
 
 .img {
-   height: 400px;
+   height: 100%;
    width: 100%;
    position: absolute;
    left: 0%;
    transform: translateX(-50%);
+}
+
+.ill {
+   position: absolute;
+   left: 60%;
+   top: 60%;
+   width: 280px;
+   height: 310px;
 }
 
 
@@ -83,13 +99,20 @@ li{
 .bttn-mix {
   position: absolute;
   left: 18%;
-  top: 68%;
+  top: 48%;
   text-align: center;
   border-radius: 40px;
   width: 100px;
-  background: linear-gradient(180deg, #10BF8B -33.72%, #0FB0BA 129.07%);
+  background-color: rgb(53, 212, 165);
   box-shadow: 0px 24px 84px rgba(0, 0, 0, 0.801); 
   border-style: none;
+  transition: all 0.5s ease-in-out;
+  
+}
+
+.bttn-mix:hover {
+  background-color: #10BF8B;
+  
 }
 
 
@@ -150,6 +173,32 @@ li{
 
 }
 
+.login {
+
+  font-family: 'Montesserat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+     position: absolute;
+     width: 70px;
+     background: none;
+     z-index: 2;
+     color: white;
+
+}
+
+.signup {
+
+  font-family: 'Montesserat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+     position: absolute;
+     width: 70px;
+     background: none;
+     z-index: 2;
+     color: white;
+
+}
+
 .maintxt {
   top: 25%;
   left: 18%;
@@ -163,8 +212,10 @@ li{
   font-weight: 800;
 }
 
+
+
 .subtxt { 
-  top: 44%;
+  top: 36%;
   left: 18%;
   color: white;
   background: none;
@@ -175,6 +226,63 @@ li{
   letter-spacing: 1px;
   font-weight: 300;
 }
+
+.bottomtxt {
+  top: 85%;
+  left: 18%;
+  color: black;
+  background: none;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  font-family: 'Lora', sans-serif;
+  font-size: 50px;
+  letter-spacing: -2px;
+  font-weight: 800;
+}
+
+.scrolldwn{
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 1.8s;
+  animation-direction: alternate-reverse;  
+}
+
+.scrolldwn2{
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 1.3s;
+  animation-direction: alternate-reverse;  
+}
+
+
+@keyframes fade{
+  0%,50% {
+    opacity: 0;
+}
+  100%{
+    opacity: 1;
+}
+  
+}
+
+.scrolldwn {
+  position: absolute;
+  left: 45%;
+  top: 85%;
+  z-index: 1;
+}
+
+.scrolldwn2 {
+  position: absolute;
+  left: 47.6%;
+  top: 89.7%;
+  z-index: 1;
+}
+
+
 
 .strt-mix {
   
