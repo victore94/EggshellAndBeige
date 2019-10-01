@@ -1,4 +1,4 @@
-module.exports = function (sequelize, DataTypes) {
+module.exports = (sequelize, DataTypes) => {
   var Drinks = sequelize.define("Drinks", {
     drink_name: {
       type: DataTypes.TEXT,
