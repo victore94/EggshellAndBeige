@@ -9,10 +9,11 @@
         href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Montserrat:400,500,500i,600,600i,700,800,900,900i&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mix.css">
     <title>Cocktail.io</title>
 </head>
 
-<body>
+<body id="body">
 
     <!-- Header card container & contents (gradient overlay inclued) -->
 
@@ -21,70 +22,133 @@
 
 
 
+
         <div class="head-contain">
 
 
-            <!-- Header text -->
-            <ul>
-                <li><a href="">
-                        <h2 class="home">Home</h2>
-                    </a></li>
-                <li><a href="">
-                        <h2 class="featured">Featured</h2>
-                    </a></li>
-                <li><a href="">
-                        <h2 class="abt-us">About Us</h2>
-                    </a></li>
+            <div class="all-nav">
+                <!-- Header text -->
+                <ul>
+                    <li><a href="">
+                            <h2 class="home">Home</h2>
+                        </a></li>
+                    <li><a href="">
+                            <h2 class="featured">Featured</h2>
+                        </a></li>
+                    <li><a href="">
+                            <h2 class="abt-us">About Us</h2>
+                        </a></li>
 
 
-            </ul>
+                </ul>
 
-            <ul class="log-sign">
-                <li><a href="">
-                        <h2 class="login">Log In</h2>
-                    </a></li>
-                <li><a href="">
-                        <h2 class="signup">Sign Up</h2>
-                    </a></li>
+                <ul class="log-sign">
+                    <li><a href="">
+                            <h2 class="login">Log In</h2>
+                        </a></li>
+                    <li><a href="">
+                            <h2 class="signup">Sign Up</h2>
+                        </a></li>
 
-            </ul>
+                </ul>
 
-
-
-            <h1 class="maintxt" id="maintxt">Shaken or Stirred?</h1>
-
-
-
-            <h1 class="subtxt" id="subtxt">The most important question. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. <br> Cras ultrices elit nec gravida pharetra.</h1>
-            <div class="img" id="rellax" data-speed="-6"><img src="./assets/images/Group.png" alt="drunk" width="100%">
             </div>
+
+
+
+            <div class="head-content">
+
+                <h1 class="maintxt" id="maintxt">Shaken or Stirred?</h1>
+
+
+
+                <h1 class="subtxt" id="subtxt">The most important question. With <strong>Ebrius</strong>, you can
+                    effortlessly craft<br> a unique and elegant cocktail recipe.</h1>
+                <div class="img" id="rellax" data-speed="-6"><img src="images/Group.png" alt="drunk" width="100%"></div>
+
+
+
+                <img src="images/logotxt.png" alt="logotxt" class="logotxt">
+
+
+
+                <!-- <div class="btn-contain"> -->
+
+                <button class="bttn-mix" id="main-bttn">
+                    <p class="strt-mix" id="strt-mix">MAKE A COCKTAIL</p>
+                </button>
+                <!-- </div> -->
+                </a>
+            </div>
+
         </div>
-
-        <img src="./assets/images/wow.png" class="logo" alt="glass">
-
-
-        <!-- <div class="btn-contain"> -->
-        <button class="bttn-mix">
-            <p class="strt-mix" id="strt-mix">START MIXING</p>
-        </button>
-        <!-- </div> -->
 
     </div>
 
     <!-- <img src="alcho.png" class="ill" alt="drink"> -->
+    <img src="images/LOGO.png" class="logo" class="rellax" alt="glass">
     <h1 class="bottomtxt" class="rellax" id="bottomtxt">The Art of Mixology</h1>
+    <p class="subtxt2" class="rellax" id="subtxt2">Alcohol is timeless. So are bespoke creations. Luckily we blended the
+        two together so it always goes down smooth. Ebrius utilizes the untapped potential of the up and coming cocktail
+        culture so that hobbiests or mixologists can share, test and rate cocktails easily. Drinking
+        will never be antiquated, so the drinks shouldn't have to be either. Now, every conceivable cocktail is at your
+        slowly numbing fingertips. With Ebrius, a posh cocktail designed in LA can be enjoyed by everyone from your
+        regional oligarchs to your local gutter punks. Feeling creative? Craft and share your own personal drinks or
+        menus for bragging rights or perhaps a job offer. Either way, you will be significantly more "educated" every
+        time you stop by.</p>
+    <button class="bttn-more" id="more-bttn">
+        <p class="learn" id="learn">MORE ABOUT <strong>EBRIUS</strong></p>
+    </button>
+    <span data-tilt><img src="images/drinkzz.png" alt="drinks" class="drink-img"></span>
+    <span data-tilt></span><img src="images/purp.png" alt="drinks2" class="drink-img2"></span>
+    <span data-tilt></span><img src="images/pink.png" alt="drinks3" class="drink-img3"></span>
 
-    <img src="./assets/images/Vector.png" alt="scrolldown" class="scrolldwn">
-    <img src="./assets/images/Vector2.png" alt="scrolldown2" class="scrolldwn2">
+    <img src="images/Vector.png" alt="scrolldown" class="scrolldwn">
+    <img src="images/Vector2.png" alt="scrolldown2" class="scrolldwn2">
+
+
+    <!-- MIXING PAGE CONTENTS -->
+
+    <div class="spirit-contain">
+        <h1 class="spirits" id="spirits">Spirits</h1>
+
+        <div class="spirit-choice">
+            <h2 class="spiritEnter" id="spiritEnter">Enter a spirit of your choice: </h2><input class="spiritInput"
+                type="text" name="spirit">
+            <input class="submitSpirit" type="submit" value="+">
+        </div>
+    </div>
 
 
 
+
+
+
+
+
+    <!-- Main JS -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="rellax.min.js"></script>
+    <script src="tilt.jquery.js"></script>
+    <script src="mix.js"></script>
     <script>
+
+        $('.drink-img').tilt({
+            scale: 1.05
+
+        })
+
+        $('.drink-img2').tilt({
+            scale: 1.05
+
+        })
+
+        $('.drink-img3').tilt({
+            scale: 1.05
+
+        })
 
 
         var rellax = new Rellax('#rellax');
@@ -97,6 +161,47 @@
             vertical: true,
             horizontal: false
         });
+
+        var rellax = new Rellax('.subtxt2', {
+            speed: -4,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+
+        var rellax = new Rellax('.drink-img', {
+            speed: -4,
+            center: true,
+            wrapper: null,
+            round: true,
+            vertical: false,
+            horizontal: false,
+        });
+
+        var rellax = new Rellax('.drink-img2', {
+            speed: -4,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: false,
+            horizontal: false
+        });
+
+
+        var rellax = new Rellax('.logo', {
+            speed: -2,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: false,
+            horizontal: false
+        });
+
+
+
+
 
 
         $(document).ready(function () {
@@ -117,58 +222,206 @@
 
                     }
 
+
                 });
 
             });
 
         });
 
+
+        $(document).ready(function () {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function () {
+
+                /* Check the location of each desired element */
+                $('.subtxt2').delay(1200).each(function (i) {
+
+                    var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+
+                        $(this).animate({ 'opacity': '1' }, 1500);
+
+                    }
+
+
+                });
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function () {
+
+                /* Check the location of each desired element */
+                $('.drink-img').delay(1800).each(function (i) {
+
+                    var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+
+                        $(this).animate({ 'opacity': '1' }, 1200);
+
+                    }
+
+
+                });
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function () {
+
+                /* Check the location of each desired element */
+                $('.drink-img2').delay(2100).each(function (i) {
+
+                    var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+
+                        $(this).animate({ 'opacity': '1' }, 1200);
+
+                    }
+
+
+                });
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function () {
+
+                /* Check the location of each desired element */
+                $('.drink-img3').delay(2500).each(function (i) {
+
+                    var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+
+                        $(this).animate({ 'opacity': '1' }, 1200);
+
+
+                    }
+
+
+                });
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function () {
+
+                /* Check the location of each desired element */
+                $('.bttn-more').delay(2700).each(function (i) {
+
+                    var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+
+                        $(this).animate({ 'opacity': '1' }, 1200);
+
+                        $(".bttn-more").mouseenter(function () {
+
+                            $(".bttn-more").css('transition', '0.2s ease-in-out')
+                            $(".bttn-more").css('background-color', '#26AC84');
+
+
+                        }).mouseleave(function () {
+                            $(".bttn-more").css('background-color', 'rgb(53, 212, 165)');
+                        })
+
+                    }
+
+
+                });
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function () {
+
+                /* Check the location of each desired element */
+                $('.logo').delay(2800).each(function (i) {
+
+                    var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+
+                        $(this).animate({ 'opacity': '.1' }, 1200);
+
+                    }
+
+
+                });
+
+            });
+
+        });
+
+
+
         // Navbar hover 
 
-        $(".home").mouseenter(function () {
 
-            $(".home").css('transition', '0.2s ease-in-out')
-            $(".home").css('opacity', '0.5');
-
-
-        }).mouseleave(function () {
-            $(".home").css('opacity', '1');
-        })
 
         $(".featured").mouseenter(function () {
 
             $(".featured").css('transition', '0.2s ease-in-out')
-            $(".featured").css('opacity', '0.5');
-
-        }).mouseleave(function () {
             $(".featured").css('opacity', '1');
+
+        }).mouseleave(function () {
+            $(".featured").css('opacity', '0.5');
         })
 
         $(".abt-us").mouseenter(function () {
 
             $(".abt-us").css('transition', '0.2s ease-in-out')
-            $(".abt-us").css('opacity', '0.5');
+            $(".abt-us").css('opacity', '1');
 
         }).mouseleave(function () {
-            $(".abt-us").css('opacity', '1');
-        })
-
-        $(".abt-us").mouseenter(function () {
-
-            $(".abt-us").css('transition', '0.2s ease-in-out')
             $(".abt-us").css('opacity', '0.5');
-
-        }).mouseleave(function () {
-            $(".abt-us").css('opacity', '1');
         })
 
         $(".login").mouseenter(function () {
 
             $(".login").css('transition', '0.2s ease-in-out')
-            $(".login").css('opacity', '0.5');
+            $(".login").css('opacity', '1');
 
         }).mouseleave(function () {
-            $(".login").css('opacity', '1');
+            $(".login").css('opacity', '0.5');
         })
 
         $(".signup").mouseenter(function () {
@@ -189,6 +442,8 @@
         }).mouseleave(function () {
             $(".bttn-mix").css('background-color', 'rgb(53, 212, 165)');
         })
+
+
 
 
 
