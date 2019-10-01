@@ -1,0 +1,59 @@
+
+
+
+.spirits {
+
+  opacity: 0;
+    top: 20%;
+  left: 18%;
+  color: white;
+  background: none;
+  position: absolute;
+  z-index: 2;
+  font-family: 'Monteserrat ', sans-serif;
+  font-size: 42px;
+  letter-spacing: -2px;
+  font-weight: 800;
+}
+
+
+
+.spirit-choice {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    left: 18%;
+    top: 28%;
+}
+
+.spiritInput {
+    width: 160px;
+    height: 40px;
+    border: none;
+    background: white;
+    border-radius: 30px;
+}
+
+.submitSpirit {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Monteserrat', sans-serif;
+    font-weight: 800;
+    color: white;
+    
+    font-size: 20px;
+    border: none;
+    background: rgb(53, 212, 165);
+    border-radius: 30px;
+}
+
+.spiritEnter {
+    font-family: 'Lora', sans-serif;
+  font-size: 18px;
+  letter-spacing: .5px;
+  color: white;
+  background: none;
+  font-weight: 300;
+}
