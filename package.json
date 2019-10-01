@@ -16,7 +16,8 @@
     "express-handlebars": "^3.1.0",
     "mysql2": "^1.6.5",
     "rellax": "^1.10.0",
-    "sequelize": "^5.8.6"
+    "sequelize": "^5.8.6",
+    "vanilla-tilt": "^1.7.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
