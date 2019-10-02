@@ -1,7 +1,7 @@
 var modal = document.getElementById("myModal");
 var exit = document.getElementsByClassName("close")[0];
 
-window.onload = function() {
+function displayModal() {
   modal.style.display = "block";
 
   var is21 = localStorage.getItem("is21");
@@ -21,4 +21,6 @@ window.onload = function() {
     localStorage.setItem("is21", "true");
     modal.style.display = "none";
   };
-};
+}
+
+displayModal();

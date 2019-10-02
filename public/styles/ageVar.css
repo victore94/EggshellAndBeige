@@ -1,4 +1,7 @@
 /* The Modal (background) */
+#myModal {
+  position: absolute;
+}
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
