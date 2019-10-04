@@ -182,7 +182,7 @@ li{
   color: white;
   position: absolute;
   z-index: 4;
-  top: 9.5%;
+  margin-top: -100px;
   left: 20%;
 
 
@@ -196,7 +196,7 @@ li{
     font-size: 13px;
     font-weight: 400;
 
-    left: 690%;
+    left: 688%;
     margin-right: 0px;
     letter-spacing: .2px;
      position: absolute;
@@ -249,7 +249,7 @@ li{
   font-family: 'Montesserat', sans-serif;
     font-size: 13px;
     font-weight: 300;
-    right: 20%;
+    left: -80%;
     opacity: .5;
      position: absolute;
      width: 70px;
@@ -265,7 +265,7 @@ li{
   font-family: 'Montesserat', sans-serif;
     font-size: 13px;
     font-weight: 600;
-    right: 46%;
+    left:-90%;
     letter-spacing: .2px;
      position: absolute;
      width: 70px;
@@ -298,10 +298,10 @@ li{
   position: absolute;
   z-index: 2;
   line-height: 1.5em;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 18px;
   letter-spacing: .5px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 
@@ -315,7 +315,7 @@ li{
   position: absolute;
   z-index: -1;
   opacity: 0;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 50px;
   letter-spacing: -2px;
   font-weight: 800;
@@ -323,7 +323,7 @@ li{
 
 .subtxt2 { 
   top: 105%;
-  left: 22.3%;
+  left: 22.7%;
   color: black;
   background: none;
   width: 500px;
@@ -332,7 +332,7 @@ li{
   opacity: 0;
   line-height: 1.5em;
   z-index: -1;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 18px;
   font-weight: 300;
 }
@@ -350,6 +350,7 @@ li{
   position: absolute;
   left: 58.5%;
   top: 184.5%;
+  z-index: 4;
   border-radius: 12px;
   opacity: 0;
 }
@@ -426,12 +427,15 @@ li{
   z-index: 1;
 } */
 
-
+a {
+  text-decoration: none;
+}
 
 .strt-mix {
   
   font-family: 'Montesserat', sans-serif;
    font-size: 10px;
+   text-decoration: none;
    letter-spacing: -7;
    color: #ffffff;
    font-weight: bolder;
