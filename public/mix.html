@@ -141,10 +141,10 @@
             </div>
 
 
-            <button class="submit">
-                <p>SUBMIT YOUR COCKTAIL</p>
-            </button>
-
+            <a href="login.html"><button class="submit">
+                    <p>SUBMIT YOUR COCKTAIL</p>
+                </button>
+            </a>
 
             <span data-tilt>
                 <div class="cocktail-summary" id="cocktail-summary">
@@ -160,7 +160,7 @@
 
                     <h2 class="summ-ice">ICE</h2>
                     <p class="ice-yes" id="ice-yes">YES</p>
-                    
+
 
                     <h2 class="summ-garnish">GARNISH</h2>
                     <p class="allGarnish" id="allGarnish"></p>
@@ -237,7 +237,7 @@
                     $(".ice").delay(1000).css('opacity', '1');
                     $(".ice-choice").css('transition', '1.2s ease-in-out')
                     $(".ice-choice").delay(1000).css('opacity', '1');
-                  
+
 
                     $(".yes").css('transition', '1.2s ease-in-out')
                     $(".yes").delay(1000).css('opacity', '1');
@@ -345,14 +345,14 @@
                     var spiritChoice = document.getElementById("spiritInput").value;
                     $('#allSpirits').append(spiritChoice + " ").hide()
                         .fadeIn(1000);
-                
+
                     console.log(spiritChoice);
                     document.getElementById("spiritInput").value = "";
                 })
 
                 // Remove spirit
 
-                $('#allSpirits').on('click', function() {
+                $('#allSpirits').on('click', function () {
                     $('#allSpirits').css('opacity', '0');
                 })
 
@@ -366,7 +366,7 @@
                 })
 
                 // Remove mixer
-                $('#allMixers').on('click', function() {
+                $('#allMixers').on('click', function () {
                     $('#allMixers').css('opacity', '0');
                 })
 
@@ -380,7 +380,7 @@
                 })
 
                 // Remove syrups
-                $('#allSyrups').on('click', function() {
+                $('#allSyrups').on('click', function () {
                     $('#allSyrups').css('opacity', '0');
                 })
 
@@ -396,7 +396,7 @@
                 })
 
                 // Remove garnish
-                $('#allGarnish').on('click', function() {
+                $('#allGarnish').on('click', function () {
                     $('#allGarnish').css('opacity', '0');
                 })
 
@@ -411,7 +411,7 @@
                 })
 
                 //Remove special 
-            
+
 
                 $(".yes").mouseenter(function () {
 
@@ -433,7 +433,7 @@
                     $('.yes').css('background', 'rgb(36, 146, 113)');
                     $("#ice-yes").css('transition', '0.2s ease-in-out')
                     $("#ice-yes").css('opacity', '0')
-                   
+
                     $(".no").mouseenter(function () {
 
                         $(".no").css('transition', '0.2s ease-in-out')

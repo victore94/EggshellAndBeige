@@ -9,6 +9,46 @@ canvas {
   display: block;
 }
 
+.cursor {
+
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  position: absolute;
+  border-radius: 500px;
+  mix-blend-mode: exclusion;
+  pointer-events: none;
+  box-shadow: 0px 0px 10px #fff;
+  }
+  
+   
+  .cursor:before{
+      content: "";
+      position: absolute;
+      border-radius: 500px;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 1px;
+      height: 32px;
+      width: 32px;
+      top: -13px;
+      left: -13px;
+      box-shadow: 0px 0px 10px #fff;
+    }
+    .cursor:after{
+      content: "";
+      position: absolute;
+      border-radius: 500px;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 1px;
+      height: 32px;
+      width: 32px;
+      top: -13px;
+      left: -13px;
+      box-shadow: 0px 0px 10px #fff;
+    }  
+
 /* Gradient overlay */
 
 /* 
@@ -91,7 +131,7 @@ li{
 .logotxt {
   position: absolute;
   top: 7.7%;
-  left: 24.2%;
+  left: 27.5%;
   width: 56px;
   height: 18px;
 
@@ -128,7 +168,7 @@ li{
 
 .bttn-mix {
   position: absolute;
-  left: 24.4%;
+  left: 27.5%;
   top: 48%;
   text-align: center;
   border-radius: 5px;
@@ -143,7 +183,7 @@ li{
 
 .bttn-more {
   position: absolute;
-  left: 22.3%;
+  left: 27.5%;
   top: 194%;
   text-align: center;
   border-radius: 5px;
@@ -277,7 +317,7 @@ li{
 
 .maintxt {
   top: 25%;
-  left: 24.2%;
+  left: 27.5%;
   color: white;
   background: none;
   position: absolute;
@@ -292,7 +332,7 @@ li{
 
 .subtxt { 
   top: 36%;
-  left: 24.4%;
+  left: 27.5%;
   color: white;
   background: none;
   position: absolute;
@@ -309,7 +349,7 @@ li{
 
 .bottomtxt {
   top: 80%;
-  left: 22.3%;
+  left: 27.5%;
   color: black;
   background: none;
   position: absolute;
@@ -323,7 +363,7 @@ li{
 
 .subtxt2 { 
   top: 105%;
-  left: 22.7%;
+  left: 27.5%;
   color: black;
   background: none;
   width: 500px;
@@ -346,11 +386,12 @@ li{
   }
 }
 
+
+
 .drink-img {
   position: absolute;
   left: 58.5%;
   top: 184.5%;
-  z-index: 4;
   border-radius: 12px;
   opacity: 0;
 }

@@ -14,6 +14,7 @@
 </head>
 
 <body id="body">
+    <div class="cursor"></div>
 
     <!-- Header card container & contents (gradient overlay inclued) -->
 
@@ -35,7 +36,7 @@
                     <li><a href="">
                             <h2 class="featured">Featured</h2>
                         </a></li>
-                  
+
 
 
                 </ul>
@@ -73,7 +74,9 @@
                 <!-- <div class="btn-contain"> -->
 
                 <button class="bttn-mix" id="main-bttn">
-                  <a href="mix.html"> <p class="strt-mix" id="strt-mix">MAKE A COCKTAIL</p></a> 
+                    <a href="mix.html">
+                        <p class="strt-mix" id="strt-mix">MAKE A COCKTAIL</p>
+                    </a>
                 </button>
                 <!-- </div> -->
                 </a>
@@ -97,9 +100,12 @@
     <button class="bttn-more" id="more-bttn">
         <p class="learn" id="learn">MORE ABOUT <strong>EBRIUS</strong></p>
     </button>
+
     <span data-tilt><img src="images/drinkzz.png" alt="drinks" class="drink-img"></span>
     <span data-tilt></span><img src="images/purp.png" alt="drinks2" class="drink-img2"></span>
     <span data-tilt></span><img src="images/pink.png" alt="drinks3" class="drink-img3"></span>
+
+
 
     <img src="images/Vector.png" alt="scrolldown" class="scrolldwn">
     <img src="images/Vector2.png" alt="scrolldown2" class="scrolldwn2">
@@ -133,10 +139,12 @@
 
     <script>
 
+
         $('.drink-img').tilt({
-            scale: 1.25,
-            
+            scale: 1.05
         })
+
+
 
         $('.drink-img2').tilt({
             scale: 1.25
@@ -169,6 +177,7 @@
             horizontal: false
         });
 
+        
         var rellax = new Rellax('.drink-img', {
             speed: -4,
             center: true,
@@ -318,7 +327,7 @@
                     if (bottom_of_window > bottom_of_object) {
 
                         $(this).animate({ 'opacity': '1' }, 1200);
-                      
+
 
                     }
 
@@ -379,7 +388,7 @@
                     if (bottom_of_window > bottom_of_object) {
 
                         $(this).animate({ 'opacity': '.1' }, 1200);
-                
+
                     }
 
 
@@ -389,8 +398,8 @@
 
         });
 
-        
-      
+
+
         // Navbar hover 
 
 
