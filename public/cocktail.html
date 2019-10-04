@@ -10,11 +10,30 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/mix.css">
+    <link rel="stylesheet" href="styles/ageVar.css">
     <title>Cocktail.io</title>
 </head>
 
 <body id="body">
-
+<!-- The Modal -->
+<div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Are you of legal drinking age?</p>
+          <button type="button" class="btn btn-secondary" id="no">
+            uhh...
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-dismiss="modal"
+            id="yes"
+          >
+            totally
+          </button>
+        </div>
+      </div>
     <!-- Header card container & contents (gradient overlay inclued) -->
 
     <div class="main-container" id="rellax">
@@ -121,12 +140,41 @@
 
     <!-- Main JS -->
 
+    <script src="./js/ageVar.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="rellax.min.js"></script>
     <script src="tilt.jquery.js"></script>
     <script src="mix.js"></script>
     <script>
+
+        var modal = document.getElementById("myModal");
+        var exit = document.getElementsByClassName("close")[0];
+
+
+        window.onload = function() {
+        modal.style.display = "block";
+
+        var is21 = localStorage.getItem("is21");
+
+        is21 === "true"
+            ? (modal.style.display = "none")
+            : (modal.style.display = "block");
+
+        exit.onclick = function() {
+            location.href = "https://www.disney.com";
+        };
+        document.getElementById("no").onclick = function() {
+            localStorage.setItem("is21", "false");
+            location.href = "https://cponline.pw/";
+        };
+        document.getElementById("yes").onclick = function() {
+            localStorage.setItem("is21", "true");
+            modal.style.display = "none";
+        };
+        };
+
+
 
         $('.drink-img').tilt({
             scale: 1.05
