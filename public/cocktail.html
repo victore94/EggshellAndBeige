@@ -8,12 +8,31 @@
     <link
         href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Montserrat:400,500,500i,600,600i,700,800,900,900i&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./styles/ageVar.css" />
     <link rel="stylesheet" href="styles/styles.css">
 
     <title>Cocktail.io</title>
 </head>
 
 <body id="body">
+        <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Are you of legal drinking age?</p>
+                  <button type="button" class="btn btn-secondary" id="no">
+                    uhh...
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-dismiss="modal"
+                    id="yes"
+                  >
+                    totally
+                  </button>
+                </div>
+              </div>
     <div class="cursor"></div>
 
     <!-- Header card container & contents (gradient overlay inclued) -->
@@ -136,6 +155,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="rellax.min.js"></script>
     <script src="tilt.jquery.js"></script>
+    <script src="./js/ageVar.js"></script>
 
     <script>
 
