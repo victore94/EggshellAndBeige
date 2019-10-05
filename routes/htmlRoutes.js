@@ -9,5 +9,12 @@ module.exports = (app) => {
   app.get("/drinks", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/drinks.html"));
   });
+  app.get("/mix", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/mix.html"));
+  });
+  app.get("/mixer", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/mix.html"));
+  });
+
 
 };
