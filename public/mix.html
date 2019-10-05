@@ -75,8 +75,8 @@
                 <div class="spirit-contain">
 
                     <h1 class="spirits" id="spirits">Spirits*
-                        <input class="nameInput" id="spiritInput" type="text" name="spirit">
-                        <input id="input-bttn" class="submitSpirit" type="submit" value="+">
+               
+                       
                     </h1>
                     <br>
 
@@ -165,6 +165,7 @@
 
                     <h2 class="summ-ice">ICE</h2>
                     <p class="ice-yes" id="ice-yes">YES</p>
+                    <p class="ice-none" id="ice-none">--</p>
 
 
                     <h2 class="summ-garnish">GARNISH</h2>
@@ -438,6 +439,8 @@
                     $('.yes').css('background', 'rgb(36, 146, 113)');
                     $("#ice-yes").css('transition', '0.2s ease-in-out')
                     $("#ice-yes").css('opacity', '0')
+                    $("#ice-none").css('transition', '0.2s ease-in-out')
+                    $("#ice-none").css('opacity', '1')
 
                     $(".no").mouseenter(function () {
 
@@ -465,8 +468,8 @@
                     $('.yes').css('background', 'rgb(53, 212, 165)')
                     $('.no').css('background', 'rgb(36, 146, 113)');
                     $("#ice-yes").css('transition', '0.2s ease-in-out')
-                    $("#ice-no").css('transition', '0.2s ease-in-out')
-                    $("#ice-no").css('opacity', '0')
+                    $("#ice-none").css('transition', '0.2s ease-in-out')
+                    $("#ice-none").css('opacity', '0')
                     $("#ice-yes").css('opacity', '1')
                     $(".yes").mouseenter(function () {
 

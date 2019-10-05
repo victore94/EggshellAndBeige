@@ -411,6 +411,21 @@ font-weight: 400;
     border-radius: 30px;
 }
 
+#spiritInput {
+  width: 160px;
+  height: 40px;
+  border: none;
+  font-family: 'Monteserrat ', sans-serif;
+font-size: 14px;
+color: #333333;
+letter-spacing: -.5px;
+font-weight: 600;
+margin-top: 10px;
+  padding-left: 12px;
+  background: white;
+  border-radius: 30px;
+}
+
 .spiritInput:focus {
   outline: none;
 }
@@ -686,7 +701,7 @@ font-weight: 300;
   margin-left: 28px;
 }
 
-.ice-no {
+.ice-none {
   position: absolute;
   margin-top: 0px;
   opacity: 0;
