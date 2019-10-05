@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+        href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Montserrat:400,500,500i,600,600i,700,800,900,900i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+    <link rel="stylesheet" href="styles/mix.css">
+
+    <title>Cocktail.io</title>
+</head>
+
+
+<body id="body">
+
+    <!-- Header card container & contents (gradient overlay inclued) -->
+
+    <div class="main-container" id="rellax">
+
+
+
+
+
+        <div class="head-contain">
+
+
+            <div class="all-nav">
+                <img src="images/logotxt.png" alt="logotxt" class="logotxt">
+                <!-- Header text -->
+                <ul>
+                    <li><a href="cocktail.html">
+                            <h2 class="home">Home</h2>
+                        </a></li>
+                    <li><a href="">
+                            <h2 class="featured">Featured</h2>
+                        </a></li>
+
+
+
+                </ul>
+
+                <ul class="log-sign">
+                    <li><a href="">
+                            <h2 class="login">Log In</h2>
+                        </a></li>
+                    <li><a href="">
+                            <h2 class="signup">Sign Up</h2>
+                        </a></li>
+
+                </ul>
+
+            </div>
+            <div class="img" id="rellax" data-speed="-6"><img src="images/Group.png" alt="drunk" width="100%"></div>
+
+            <h1 class="mixHeader">Mix your own cocktail.</h1>
+
+            <p class="required">REQUIRED (UP TO 5 ENTRIES PER ITEM)</p>
+
+            <p class="optional">OPTIONAL</p>
+
+
+
+
+
+
+            <!-- MIXING PAGE CONTENTS -->
+
+            <div class="requiredFields">
+
+                <div class="spirit-contain">
+
+                    <h1 class="spirits" id="spirits">Spirits*
+                        <input class="nameInput" id="spiritInput" type="text" name="spirit">
+                        <input id="input-bttn" class="submitSpirit" type="submit" value="+">
+                    </h1>
+                    <br>
+
+                    <div class="spirit-choice">
+                        <h2 class="spiritEnter" id="spiritEnter">Enter a spirit of your choice: </h2><input
+                            class="spiritInput" id="spiritInput" type="text" name="spirit">
+                        <input id="input-bttn" class="submitSpirit" type="submit" value="+">
+                    </div>
+                </div>
+
+                <div class="mixer-contain">
+                    <h1 class="mixers" id="mixers">Mixers*</h1>
+
+                    <div class="mixer-choice">
+                        <h2 class="mixerEnter" id="mixerEnter">Enter a mixer of your choice: </h2>
+                        <input class="mixerInput" id="mixerInput" type="text" name="mixer">
+                        <input id="input-bttn" class="submitMixer" type="submit" value="+">
+                    </div>
+                </div>
+
+                <div class="garnish-contain">
+                    <h1 class="garnishes" id="garnishes">Aromatics</h1>
+
+                    <div class="garnish-choice">
+                        <h2 class="garnishEnter" id="garnishEnter">Enter a garnish of your choice: </h2>
+                        <input class="garnishInput" id="garnishInput" type="text" name="garnish">
+                        <input id="input-bttn" class="submitGarnish" type="submit" value="+">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="special-contain">
+                <h1 class="spec-instruct" id="spec-instruct">Special Instructions</h1>
+
+                <div class="special-choice">
+                    <h2 class="specialEnter" id="specialEnter">Include special instructions for your cocktail: </h2>
+                    <input class="specialInput" id="specialInput" type="text" name="special">
+                    <input id="input-bttn" class="submitSpecial" type="submit" value="+">
+                </div>
+            </div>
+
+            <div class="syrup-contain">
+                <h1 class="syrups" id="syrups">Syrups*</h1>
+
+                <div class="syrup-choice">
+                    <h2 class="syrupEnter" id="syrupEnter">Enter a syrup of your choice: </h2>
+                    <input class="syrupInput" id="syrupInput" type="text" name="syrup">
+                    <input id="input-bttn" class="submitSyrup" type="submit" value="+">
+                </div>
+            </div>
+
+            <div class="ice-contain">
+                <h1 class="ice" id="ice">Ice</h1>
+
+                <div class="ice-choice">
+                    <h2 class="iceEnter" id="iceEnter">Select an option below: </h2>
+
+                    <button class="yes">
+                        <p class="yestxt">YES</p>
+                    </button>
+                    <button class="no">
+                        <p class="notxt">NONE</p>
+                    </button>
+
+                </div>
+            </div>
+
+
+            <a><button class="submit" id="submitFormButton">
+                    <p>SUBMIT YOUR COCKTAIL</p>
+                </button>
+            </a>
+
+            <span data-tilt>
+                <div class="cocktail-summary" id="cocktail-summary">
+                    <h1 class="summ-header">Cocktail Summary</h1>
+                    <h2 class="summ-spirits">SPIRITS</h2>
+                    <p class="allSpirits" id="allSpirits"></p>
+
+                    <h2 class="summ-mixers">MIXERS</h2>
+                    <p class="allMixers" id="allMixers"></p>
+
+                    <h2 class="summ-syrups">SYRUPS</h2>
+                    <p class="allSyrups" id="allSyrups"></p>
+
+                    <h2 class="summ-ice">ICE</h2>
+                    <p class="ice-yes" id="ice-yes">YES</p>
+
+
+                    <h2 class="summ-garnish">GARNISH</h2>
+                    <p class="allGarnish" id="allGarnish"></p>
+
+                    <h2 class="summ-special">SPECIAL INSTRUCTIONS</h2>
+                    <p class="allSpecial" id="allSpecial"></p>
+                </div>
+            </span>
+
+
+
+
+
+            <!-- Main JS -->
+
+            <script src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+            <script src="tilt.jquery.js"></script>
+            <script src="rellax.min.js"></script>
+            <script>
+
+
+                $('.cocktail-summary').tilt({
+
+                    scale: 1.05
+
+                })
+
+
+                var rellax = new Rellax('#rellax');
+
+
+
+
+
+
+
+
+            </script>
+            <script src="./js/index.js" type="text/javascript"></script>
+
+</body>
+
+</html>

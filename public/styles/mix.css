@@ -279,6 +279,20 @@ letter-spacing: -.5px;
 font-weight: 400;
 }
 
+.name {
+  opacity: 0;
+  top: 72%;
+left: 27.5%;
+color: white;
+background: none;
+position: absolute;
+z-index: 2;
+font-family: 'Lato', sans-serif;
+font-size: 30px;
+letter-spacing: -.5px;
+font-weight: 400;
+}
+
 .ice {
 
   opacity: 0;
@@ -394,6 +408,14 @@ font-weight: 400;
   top: 62%;
 }
 
+.name-choice {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  left: 27.3%;
+  top: 76.6%;
+}
+
 
 
 .spiritInput {
@@ -409,6 +431,21 @@ font-weight: 400;
     padding-left: 12px;
     background: white;
     border-radius: 30px;
+}
+
+#spiritInput {
+  width: 160px;
+  height: 40px;
+  border: none;
+  font-family: 'Monteserrat ', sans-serif;
+font-size: 14px;
+color: #333333;
+letter-spacing: -.5px;
+font-weight: 600;
+margin-top: 10px;
+  padding-left: 12px;
+  background: white;
+  border-radius: 30px;
 }
 
 .spiritInput:focus {
@@ -484,6 +521,24 @@ font-weight: 400;
 }
 
 .specialInput:focus {
+  outline: none;
+}
+
+.nameInput {
+  width: 160px;
+  height: 40px;
+  border: none;
+  font-family: 'Monteserrat ', sans-serif;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: -.5px;
+  font-weight: 600;
+  padding-left: 12px;
+  background: white;
+  border-radius: 30px;
+}
+
+.nameInput:focus {
   outline: none;
 }
 
@@ -580,6 +635,24 @@ font-weight: 400;
   outline: none;
 }
 
+.submitName {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  text-align: center;
+  font-family: 'Monteserrat', sans-serif;
+  font-weight: 800;
+  color: white;
+  padding-top: 2px;
+  font-size: 17px;
+  border: none;
+  background: rgb(53, 212, 165);
+  border-radius: 30px;
+}
+.submitName:focus {
+  outline: none;
+}
+
 
 .spiritEnter {
     font-family: 'Montesserat', sans-serif;
@@ -636,10 +709,23 @@ background: none;
 font-weight: 300;
 }
 
+.nameEnter {
+  font-family: 'Montesserat', sans-serif;
+font-size: 15px;
+letter-spacing: .5px;
+margin-left: 6.5px;
+margin-top: 14px;
+color: white;
+background: none;
+font-weight: 300;
+}
+
+
+
 .submit {
   width: 180px;
-  left: 27%;
-  top: 78%;
+  left: 43.5%;
+  top: 76%;
   height: 40px;
   opacity: 0;
   margin-left: 10px;
@@ -686,7 +772,7 @@ font-weight: 300;
   margin-left: 28px;
 }
 
-.ice-no {
+.ice-none {
   position: absolute;
   margin-top: 0px;
   opacity: 0;

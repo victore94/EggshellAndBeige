@@ -73,7 +73,12 @@
             <div class="requiredFields">
 
                 <div class="spirit-contain">
-                    <h1 class="spirits" id="spirits">Spirits*</h1>
+
+                    <h1 class="spirits" id="spirits">Spirits*
+               
+                       
+                    </h1>
+                    <br>
 
                     <div class="spirit-choice">
                         <h2 class="spiritEnter" id="spiritEnter">Enter a spirit of your choice: </h2><input
@@ -114,6 +119,16 @@
                 </div>
             </div>
 
+            <div class="name-contain">
+                    <h1 class="name" id="name">Name</h1>
+    
+                    <div class="name-choice">
+                        <h2 class="nameEnter" id="nameEnter">Name for your cocktail: </h2>
+                        <input class="nameInput" id="nameInput" type="text" name="name">
+                        <input id="input-bttn" class="submitName" type="submit" value="+">
+                    </div>
+                </div>
+
             <div class="syrup-contain">
                 <h1 class="syrups" id="syrups">Syrups*</h1>
 
@@ -141,7 +156,7 @@
             </div>
 
 
-            <a href="login.html"><button class="submit">
+            <a><button class="submit" id="submitFormButton">
                     <p>SUBMIT YOUR COCKTAIL</p>
                 </button>
             </a>
@@ -160,6 +175,7 @@
 
                     <h2 class="summ-ice">ICE</h2>
                     <p class="ice-yes" id="ice-yes">YES</p>
+                    <p class="ice-none" id="ice-none">--</p>
 
 
                     <h2 class="summ-garnish">GARNISH</h2>
@@ -176,8 +192,8 @@
 
             <!-- Main JS -->
 
-            <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
             <script src="tilt.jquery.js"></script>
             <script src="rellax.min.js"></script>
             <script>
@@ -221,6 +237,11 @@
                     $(".spec-instruct").delay(1000).css('opacity', '1');
                     $(".special-choice").css('transition', '3s ease-in-out')
                     $(".special-choice").delay(1000).css('opacity', '1');
+
+                    $(".name").css('transition', '2s ease-in-out')
+                    $(".name").delay(1000).css('opacity', '1');
+                    $(".name-choice").css('transition', '3s ease-in-out')
+                    $(".name-choice").delay(1000).css('opacity', '1');
 
 
                     $(".mixHeader").css('transition', '1.2s ease-in-out')
@@ -433,6 +454,8 @@
                     $('.yes').css('background', 'rgb(36, 146, 113)');
                     $("#ice-yes").css('transition', '0.2s ease-in-out')
                     $("#ice-yes").css('opacity', '0')
+                    $("#ice-none").css('transition', '0.2s ease-in-out')
+                    $("#ice-none").css('opacity', '1')
 
                     $(".no").mouseenter(function () {
 
@@ -460,8 +483,8 @@
                     $('.yes').css('background', 'rgb(53, 212, 165)')
                     $('.no').css('background', 'rgb(36, 146, 113)');
                     $("#ice-yes").css('transition', '0.2s ease-in-out')
-                    $("#ice-no").css('transition', '0.2s ease-in-out')
-                    $("#ice-no").css('opacity', '0')
+                    $("#ice-none").css('transition', '0.2s ease-in-out')
+                    $("#ice-none").css('opacity', '0')
                     $("#ice-yes").css('opacity', '1')
                     $(".yes").mouseenter(function () {
 
@@ -486,6 +509,8 @@
 
 
             </script>
+            <script src="./js/index.js" type="text/javascript"></script>
+
 </body>
 
 </html>
