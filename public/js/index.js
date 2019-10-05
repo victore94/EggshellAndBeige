@@ -44,7 +44,7 @@ $(document).ready(function () {
     function submitDrink(Drinks) {
         $.post("/api/drinks", Drinks, () => {
             console.log('yes');
-            window.location.href = "drinks";
+            window.location.href = "/api/drinks";
         });
     }
 })

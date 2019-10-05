@@ -183,8 +183,8 @@ a {
 
 .bttn-more {
   position: absolute;
-  left: 27.5%;
-  top: 194%;
+  left: 24.5%;
+  top: 192%;
   text-align: center;
   border-radius: 5px;
   width: 200px;
@@ -337,7 +337,7 @@ a {
 
 .bottomtxt {
   top: 80%;
-  left: 27.5%;
+  left: 24.5%;
   color: black;
   background: none;
   position: absolute;
@@ -351,7 +351,7 @@ a {
 
 .subtxt2 {
   top: 105%;
-  left: 27.5%;
+  left: 24.8%;
   color: black;
   background: none;
   width: 500px;
@@ -375,7 +375,7 @@ a {
 }
 
 
-
+/* 
 .drink-img {
   position: absolute;
   left: 58.5%;
@@ -386,12 +386,14 @@ a {
 
 .drink-img:hover {
   box-shadow: 0px 26px 74px rgba(0, 0, 0, 0.46);
-}
+} */
 
 .drink-img2 {
   position: absolute;
   left: 58.5%;
-  top: 159.5%;
+  top: 154.5%;
+  width: 308px;
+  height: 185px;
   border-radius: 12px;
   opacity: 0;
 }
@@ -403,12 +405,28 @@ a {
 .drink-img3 {
   position: absolute;
   left: 58.5%;
-  top: 134.5%;
+  width: 308px;
+  height: 185px;
+  top: 130.5%;
   border-radius: 12px;
   opacity: 0;
 }
 
 .drink-img3:hover {
+  box-shadow: 0px 26px 74px rgba(0, 0, 0, 0.46);
+}
+
+.drink-img4 {
+  position: absolute;
+  left: 58.5%;
+  width: 308px;
+  height: 185px;
+  top: 178.8%;
+  border-radius: 12px;
+  opacity: 0;
+}
+
+.drink-img4:hover {
   box-shadow: 0px 26px 74px rgba(0, 0, 0, 0.46);
 }
 
