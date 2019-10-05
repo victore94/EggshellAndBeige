@@ -1,4 +1,3 @@
-
 .modal {
   display: none; /* Hidden by default */
   position: absolute; /* Stay in place */
@@ -18,30 +17,30 @@
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid rgb(255, 255, 255);
-  width: 490px; /* Could be more or less, depending on screen size */
+  width: 520px; /* Could be more or less, depending on screen size */
 }
 
-.yes, .no {
+.yes,
+.no {
   padding: 15px 100px;
-  margin:10px 4px;
+  margin: 10px 4px;
   color: rgb(5, 5, 5);
   font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
   position: relative;
   text-decoration: none;
-  display:inline-block;
-  
+  display: inline-block;
 }
 
 .yes {
-  box-shadow: inset 000px 0px 0px 0px #6098FF;
--webkit-transition: all 0.6s cubic-bezier(.9, .24, .40, 1);
-transition: all 0.6s cubic-bezier(.9, .24, .40, 1)
+  box-shadow: inset 000px 0px 0px 0px #60ff88c2;
+  -webkit-transition: all 0.6s cubic-bezier(0.9, 0.24, 0.4, 1);
+  transition: all 0.6s cubic-bezier(0.9, 0.24, 0.4, 1);
 }
 
 .yes::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 0%;
   display: block;
@@ -51,9 +50,9 @@ transition: all 0.6s cubic-bezier(.9, .24, .40, 1)
   opacity: 0;
   top: 0;
   z-index: -1;
-  -webkit-transition: height .4s cubic-bezier(0.9, 1, 0.32, 1), opacity .1s ease;
-  transition: height .4s cubic-bezier(0.9, 1, 0.32, 1), opacity .1s ease;
-
+  -webkit-transition: height 0.4s cubic-bezier(0.9, 1, 0.32, 1),
+    opacity 0.1s ease;
+  transition: height 0.4s cubic-bezier(0.9, 1, 0.32, 1), opacity 0.1s ease;
 }
 
 .yes:hover::before {
@@ -62,18 +61,17 @@ transition: all 0.6s cubic-bezier(.9, .24, .40, 1)
 }
 
 .yes:hover {
-  box-shadow: inset 00px 100px 0px 0px #6098FF;
+  box-shadow: inset 00px 100px 0px 0px #6098ff;
   color: #ffffff;
 }
-        
 
 .no::before {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: 50%;
+  bottom: 25%;
   left: 0px;
   width: 100%;
-  height: 1px;
+  height: 22px;
   background: rgba(247, 23, 23, 0.596);
   display: block;
   -webkit-transform-origin: left top;
@@ -83,7 +81,7 @@ transition: all 0.6s cubic-bezier(.9, .24, .40, 1)
   -ms-transform: scale(0, 1);
   transform: scale(0, 1);
   -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-  transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
 }
 
 .no:hover::before {
@@ -92,11 +90,12 @@ transition: all 0.6s cubic-bezier(.9, .24, .40, 1)
   transform-origin: right top;
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
-  transform: scale(1, 1)
+  transform: scale(1, 1);
 }
-#age{
+#age {
   font-size: 18px;
   color: #ffffff;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
