@@ -1,14 +1,50 @@
 // this is where the AJAX is going
 
-$(document).ready(() => {
-    let $drinkInput = $('.spiritInput')
+$(document).ready(function () {
 
-    $(document).on('click', '.submitSpirit', insertDrinks)
+    let spiritInput = $('.spiritInput')
+    let spiritInputTwo = $('.spiritInputTwo')
+    let mixerInput = $('.mixerInput')
+    let garnishInput = $('.garnishInput')
+    let syrupInput = $('.syrupInput')
+    let specialInput = $('.specialInput')
+    let nameInput = $('.nameInput')
 
+    getDrinks()
+    function getDrinks() {
+        $.get("/api/drinks", function (data) {
+            drinks = data
+
+        })
+    }
+
+
+    $(document).on('click', '.submitSpirit', submitSpirit)
+
+    function submitSpirit() {
+        $('.submitSpirit').addClass("submitSpiritTwo")
+        console.log(this)
+    }
+
+    $(document).on('click', '#submitFormButton', insertDrinks)
     function insertDrinks(e) {
+        e.preventDefault();
+
         let drink = {
-            spirit_one: $drinkInput.val().trim(''),
+            drink_name: nameInput.val().trim(''),
+            spirit_one: spiritInput.val().trim(''),
+            mixer_one: mixerInput.val().trim(''),
+            garnish: garnishInput.val().trim(''),
+            syrup_one: syrupInput.val().trim(''),
+            special_instructions: specialInput.val().trim('')
         }
-        console.log(drink)
+        console.log('this is the drink ', drink)
+        submitDrink(drink)
+    }
+    function submitDrink(Drinks) {
+        $.post("/api/drinks", Drinks, () => {
+            console.log('yes');
+            window.location.href = "drinks";
+        });
     }
 })

@@ -92,10 +92,6 @@ const getUser = async obj => {
   });
 };
 
-// set some basic routes
-app.get('/', (req, res) => {
-  res.json({ message: 'Express is up!' });
-});
 
 // get all users
 app.get('/users', (req, res) => {
@@ -134,7 +130,7 @@ app.get('/protected', passport.authenticate('jwt', { session: false }), (req, re
   res.json('Success! You can now see this without a token.');
 });
 
-db.sequelize.sync({ force: true }).then(() => {
+db.sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
     console.log("App listening on PORT " + PORT);
   });

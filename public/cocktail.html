@@ -9,11 +9,12 @@
         href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Montserrat:400,500,500i,600,600i,700,800,900,900i&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/mix.css">
+
     <title>Cocktail.io</title>
 </head>
 
 <body id="body">
+    <div class="cursor"></div>
 
     <!-- Header card container & contents (gradient overlay inclued) -->
 
@@ -29,15 +30,13 @@
             <div class="all-nav">
                 <!-- Header text -->
                 <ul>
-                    <li><a href="">
+                    <li><a href="cocktail.html">
                             <h2 class="home">Home</h2>
                         </a></li>
                     <li><a href="">
                             <h2 class="featured">Featured</h2>
                         </a></li>
-                    <li><a href="">
-                            <h2 class="abt-us">About Us</h2>
-                        </a></li>
+
 
 
                 </ul>
@@ -75,7 +74,9 @@
                 <!-- <div class="btn-contain"> -->
 
                 <button class="bttn-mix" id="main-bttn">
-                    <p class="strt-mix" id="strt-mix">MAKE A COCKTAIL</p>
+                    <a href="mix.html">
+                        <p class="strt-mix" id="strt-mix">MAKE A COCKTAIL</p>
+                    </a>
                 </button>
                 <!-- </div> -->
                 </a>
@@ -88,13 +89,23 @@
     <!-- <img src="alcho.png" class="ill" alt="drink"> -->
     <img src="images/LOGO.png" class="logo" class="rellax" alt="glass">
     <h1 class="bottomtxt" class="rellax" id="bottomtxt">The Art of Mixology</h1>
-    <p class="subtxt2" class="rellax" id="subtxt2">Alcohol is timeless. So are bespoke creations. Luckily we blended the two together so it always goes down smooth. Ebrius utilizes the untapped potential of the up and coming cocktail culture so that hobbiests or mixologists can share, test and rate new or revised cocktails easily. Drinking will never be antiquated, so the drinks shouldn't have to be either. Now, every conceivable cocktail is at your slowly numbing fingertips. With Ebrius, a posh cocktail designed in LA can be enjoyed by everyone from your regional oligarch in his ivory tower, to your local tinsmith with holes in his boots. Feeling creative? Craft and share your own drink recipes and add them to your menu for bragging rights or perhaps a job offer. Either way, you will be significantly more "educated" every time you stop by.</p>
+    <p class="subtxt2" class="rellax" id="subtxt2">Alcohol is timeless. So are bespoke creations. Luckily we blended the
+        two together so it always goes down smooth. Ebrius utilizes the untapped potential of the up and coming cocktail
+        culture so that hobbiests or mixologists can share, test and rate cocktails easily. Drinking
+        will never be antiquated, so the drinks shouldn't have to be either. Now, every conceivable cocktail is at your
+        slowly numbing fingertips. With Ebrius, a posh cocktail designed in LA can be enjoyed by everyone from your
+        regional oligarchs to your local gutter punks. Feeling creative? Craft and share your own personal drinks or
+        menus for bragging rights or perhaps a job offer. Either way, you will be significantly more "educated" every
+        time you stop by.</p>
     <button class="bttn-more" id="more-bttn">
         <p class="learn" id="learn">MORE ABOUT <strong>EBRIUS</strong></p>
     </button>
+
     <span data-tilt><img src="images/drinkzz.png" alt="drinks" class="drink-img"></span>
     <span data-tilt></span><img src="images/purp.png" alt="drinks2" class="drink-img2"></span>
     <span data-tilt></span><img src="images/pink.png" alt="drinks3" class="drink-img3"></span>
+
+
 
     <img src="images/Vector.png" alt="scrolldown" class="scrolldwn">
     <img src="images/Vector2.png" alt="scrolldown2" class="scrolldwn2">
@@ -125,21 +136,23 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="rellax.min.js"></script>
     <script src="tilt.jquery.js"></script>
-    <script src="mix.js"></script>
+
     <script>
+
 
         $('.drink-img').tilt({
             scale: 1.05
-
         })
 
+
+
         $('.drink-img2').tilt({
-            scale: 1.05
+            scale: 1.25
 
         })
 
         $('.drink-img3').tilt({
-            scale: 1.05
+            scale: 1.25
 
         })
 
@@ -203,7 +216,7 @@
             $(window).scroll(function () {
 
                 /* Check the location of each desired element */
-                $('.bottomtxt').delay(900).each(function (i) {
+                $('.bottomtxt').delay(700).each(function (i) {
 
                     var bottom_of_object = $(this).offset().top + $(this).outerHeight() * 1.2;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -229,7 +242,7 @@
             $(window).scroll(function () {
 
                 /* Check the location of each desired element */
-                $('.subtxt2').delay(1200).each(function (i) {
+                $('.subtxt2').delay(1000).each(function (i) {
 
                     var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -254,7 +267,7 @@
             $(window).scroll(function () {
 
                 /* Check the location of each desired element */
-                $('.drink-img').delay(1800).each(function (i) {
+                $('.drink-img2-2').delay(1600).each(function (i) {
 
                     var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -279,7 +292,7 @@
             $(window).scroll(function () {
 
                 /* Check the location of each desired element */
-                $('.drink-img2').delay(2100).each(function (i) {
+                $('.drink-img2').delay(1800).each(function (i) {
 
                     var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -304,7 +317,7 @@
             $(window).scroll(function () {
 
                 /* Check the location of each desired element */
-                $('.drink-img3').delay(2500).each(function (i) {
+                $('.drink-img3').delay(2100).each(function (i) {
 
                     var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -330,7 +343,7 @@
             $(window).scroll(function () {
 
                 /* Check the location of each desired element */
-                $('.bttn-more').delay(2700).each(function (i) {
+                $('.bttn-more').delay(2500).each(function (i) {
 
                     var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -365,7 +378,7 @@
             $(window).scroll(function () {
 
                 /* Check the location of each desired element */
-                $('.logo').delay(2800).each(function (i) {
+                $('.logo').delay(2600).each(function (i) {
 
                     var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();

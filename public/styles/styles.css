@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   height: 220vh;
@@ -8,6 +7,46 @@ body {
 canvas {
   display: block;
 }
+
+.cursor {
+
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  position: absolute;
+  border-radius: 500px;
+  mix-blend-mode: exclusion;
+  pointer-events: none;
+  box-shadow: 0px 0px 10px #fff;
+  }
+  
+   
+  .cursor:before{
+      content: "";
+      position: absolute;
+      border-radius: 500px;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 1px;
+      height: 32px;
+      width: 32px;
+      top: -13px;
+      left: -13px;
+      box-shadow: 0px 0px 10px #fff;
+    }
+    .cursor:after{
+      content: "";
+      position: absolute;
+      border-radius: 500px;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 1px;
+      height: 32px;
+      width: 32px;
+      top: -13px;
+      left: -13px;
+      box-shadow: 0px 0px 10px #fff;
+    }  
 
 /* Gradient overlay */
 
@@ -20,57 +59,57 @@ canvas {
   
 } */
 
-
 /* Main container & contents */
-
 
 .main-container {
   position: absolute;
-   width: 100%;
-   top: 0%;
-   left: 0%;
-   height: 100%;
-   z-index: 1;
-   background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.788) -18.5%, rgba(0, 0, 0, 0.08) 177%);
-   transform: translate(-50%,-50%);
-   overflow: hidden;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  z-index: 1;
+  background-color: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.788) -18.5%,
+    rgba(0, 0, 0, 0.08) 177%
+  );
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
-ul{
+ul {
   position: absolute;
-  width: 800px; height: 50px;
-  top: 3.5%; left: 15.5%;
-  padding: 0px ;
+  width: 800px;
+  height: 50px;
+  top: 3.5%;
+  left: 15.5%;
+  padding: 0px;
   list-style: none;
-
-  
 }
 
 .log-sign {
   position: absolute;
-  width: 200px; height: 50px;
-  top: 3.5%; left: 68%;
-  padding: 0px ;
+  width: 200px;
+  height: 50px;
+  top: 3.5%;
+  left: 68%;
+  padding: 0px;
   list-style: none;
 }
 
-li{
+li {
   position: relative;
   display: inline-table;
   padding: 0 46px;
   color: #fff;
 }
 
-
-
-
-
 .logo {
   position: absolute;
   top: 115.8%;
   left: 14.5%;
-   z-index: -2; 
-     width: 410px;
+  z-index: -2;
+  width: 410px;
   opacity: 0;
   /* -webkit-animation: flickerAnimation 2s infinite;
    -moz-animation: flickerAnimation 2s infinite;
@@ -79,42 +118,41 @@ li{
   height: 410px;
 }
 
-@keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-
-
 
 .logotxt {
   position: absolute;
   top: 7.7%;
-  left: 24.2%;
+  left: 27.5%;
   width: 56px;
   height: 18px;
-
 }
 
-
-
 .img {
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   left: 0%;
-   transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  transform: translateX(-50%);
 }
 
 .ill {
-   position: absolute;
-   left: 60%;
-   top: 60%;
-   width: 280px;
-   height: 310px;
+  position: absolute;
+  left: 60%;
+  top: 60%;
+  width: 280px;
+  height: 310px;
 }
-
 
 .list-group-item {
   line-height: 2.5;
@@ -123,27 +161,25 @@ li{
 .btn-contain {
   text-align: center;
   margin-top: 26em;
-
 }
 
 .bttn-mix {
   position: absolute;
-  left: 24.4%;
+  left: 27.5%;
   top: 48%;
   text-align: center;
   border-radius: 5px;
   height: 40px;
   width: 150px;
   background-color: rgb(53, 212, 165);
-  box-shadow: 0px 24px 84px rgba(0, 0, 0, 0.801); 
+  box-shadow: 0px 24px 84px rgba(0, 0, 0, 0.801);
   border-style: none;
   transition: all 0.5s ease-in-out;
-  
 }
 
 .bttn-more {
   position: absolute;
-  left: 22.3%;
+  left: 27.5%;
   top: 194%;
   text-align: center;
   border-radius: 5px;
@@ -151,52 +187,49 @@ li{
   opacity: 0;
   height: 40px;
   background-color: rgb(53, 212, 165);
-  box-shadow: 0px 28px 84px rgba(0, 0, 0, 0.534); 
+  box-shadow: 0px 28px 84px rgba(0, 0, 0, 0.534);
   border-style: none;
-  
-  
 }
-
-
 
 .learn {
-  
-  font-family: 'Montesserat', sans-serif;
-   font-size: 10px;
-   letter-spacing: -7;
-   color: #ffffff;
-   font-weight: bolder;
+  font-family: "Montesserat", sans-serif;
+  font-size: 10px;
+  letter-spacing: -7;
+  color: #ffffff;
+  font-weight: bolder;
 }
 
-.bttn-mix:focus {outline:0;}
-.bttn-more:focus {outline:0;}
+.bttn-mix:focus {
+  outline: 0;
+}
+.bttn-more:focus {
+  outline: 0;
+}
 
 .bttn-mix:hover {
-  background-color: #10BF8B;
-  
+  background-color: #10bf8b;
 }
-
 
 .nav {
   display: inline-table;
   color: white;
   position: absolute;
   z-index: 4;
-  top: 9.5%;
+  margin-top: -100px;
   left: 20%;
-
-
 }
 
-
 .home {
+  font-family: "Montesserat", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
 
 
     font-family: 'Montesserat', sans-serif;
     font-size: 13px;
     font-weight: 400;
 
-    left: 690%;
+    left: 688%;
     margin-right: 0px;
     letter-spacing: .2px;
      position: absolute;
@@ -209,39 +242,33 @@ li{
 }
 
 .featured {
-  
-  font-family: 'Montesserat', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    left: 665%;
-    opacity: .5;
-     position: absolute;
-     letter-spacing: .2px;
-     margin-left: 0px;
-     background: none;
-     z-index: 2;
-     color: white;
-
-
+  font-family: "Montesserat", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  left: 665%;
+  opacity: 0.5;
+  position: absolute;
+  letter-spacing: 0.2px;
+  margin-left: 0px;
+  background: none;
+  z-index: 2;
+  color: white;
 }
 
 .abt-us {
-
-  font-family: 'Montesserat', sans-serif;
-    font-size: 13px;
-    opacity: .5;
-    font-weight: 400;
-    margin-left: 10px;
-    left: 658%;
-    letter-spacing: .2px;
-     position: absolute;
-     margin-left: 0px;
-     width: 70px;
-     background: none;
-     z-index: 2;
-     color: white;
-
-
+  font-family: "Montesserat", sans-serif;
+  font-size: 13px;
+  opacity: 0.5;
+  font-weight: 400;
+  margin-left: 10px;
+  left: 658%;
+  letter-spacing: 0.2px;
+  position: absolute;
+  margin-left: 0px;
+  width: 70px;
+  background: none;
+  z-index: 2;
+  color: white;
 }
 
 .login {
@@ -249,7 +276,7 @@ li{
   font-family: 'Montesserat', sans-serif;
     font-size: 13px;
     font-weight: 300;
-    right: 20%;
+    left: -80%;
     opacity: .5;
      position: absolute;
      width: 70px;
@@ -265,7 +292,7 @@ li{
   font-family: 'Montesserat', sans-serif;
     font-size: 13px;
     font-weight: 600;
-    right: 46%;
+    left:-90%;
     letter-spacing: .2px;
      position: absolute;
      width: 70px;
@@ -277,62 +304,59 @@ li{
 
 .maintxt {
   top: 25%;
-  left: 24.2%;
+  left: 27.5%;
   color: white;
   background: none;
   position: absolute;
   z-index: 2;
-  font-family: 'Monteserrat ', sans-serif;
+  font-family: "Monteserrat ", sans-serif;
   font-size: 50px;
   letter-spacing: -2px;
   font-weight: 800;
 }
 
-
-
-.subtxt { 
+.subtxt {
   top: 36%;
-  left: 24.4%;
+  left: 27.5%;
   color: white;
   background: none;
   position: absolute;
   z-index: 2;
   line-height: 1.5em;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 18px;
   letter-spacing: .5px;
-  font-weight: 300;
+  font-weight: 400;
 }
-
 
 /* Bottom page content */
 
 .bottomtxt {
   top: 80%;
-  left: 22.3%;
+  left: 27.5%;
   color: black;
   background: none;
   position: absolute;
   z-index: -1;
   opacity: 0;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 50px;
   letter-spacing: -2px;
   font-weight: 800;
 }
 
-.subtxt2 { 
+.subtxt2 {
   top: 105%;
-  left: 22.3%;
+  left: 27.5%;
   color: black;
   background: none;
   width: 500px;
   position: absolute;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   opacity: 0;
   line-height: 1.5em;
   z-index: -1;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 18px;
   font-weight: 300;
 }
@@ -346,6 +370,8 @@ li{
   }
 }
 
+
+
 .drink-img {
   position: absolute;
   left: 58.5%;
@@ -356,7 +382,6 @@ li{
 
 .drink-img:hover {
   box-shadow: 0px 26px 74px rgba(0, 0, 0, 0.46);
-
 }
 
 .drink-img2 {
@@ -365,7 +390,6 @@ li{
   top: 159.5%;
   border-radius: 12px;
   opacity: 0;
-  
 }
 
 .drink-img2:hover {
@@ -378,38 +402,36 @@ li{
   top: 134.5%;
   border-radius: 12px;
   opacity: 0;
-  
 }
 
 .drink-img3:hover {
   box-shadow: 0px 26px 74px rgba(0, 0, 0, 0.46);
 }
 
-.scrolldwn{
+.scrolldwn {
   animation-name: fade;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-duration: 1.8s;
-  animation-direction: alternate-reverse;  
+  animation-direction: alternate-reverse;
 }
 
-.scrolldwn2{
+.scrolldwn2 {
   animation-name: fade;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-duration: 1.3s;
-  animation-direction: alternate-reverse;  
+  animation-direction: alternate-reverse;
 }
 
-
-@keyframes fade{
-  0%,50% {
+@keyframes fade {
+  0%,
+  50% {
     opacity: 0;
-}
-  100%{
+  }
+  100% {
     opacity: 1;
-}
-  
+  }
 }
 
 .scrolldwn {
@@ -426,13 +448,52 @@ li{
   z-index: 1;
 } */
 
-
-
 .strt-mix {
-  
-  font-family: 'Montesserat', sans-serif;
-   font-size: 10px;
-   letter-spacing: -7;
-   color: #ffffff;
-   font-weight: bolder;
+  font-family: "Montesserat", sans-serif;
+  font-size: 10px;
+  letter-spacing: -7;
+  color: #ffffff;
+  font-weight: bolder;
 }
+/* 
+/* The Modal (background) */
+#myModal {
+  position: absolute;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 

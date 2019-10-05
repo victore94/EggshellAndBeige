@@ -8,10 +8,13 @@
     <link
         href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Montserrat:400,500,500i,600,600i,700,800,900,900i&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
     <link rel="stylesheet" href="styles/mix.css">
+
     <title>Cocktail.io</title>
 </head>
+
 
 <body id="body">
 
@@ -24,21 +27,19 @@
 
 
         <div class="head-contain">
-                <div class="img" id="rellax" data-speed="-6"><img src="Group.png" alt="drunk" width="100%"></div>
 
 
             <div class="all-nav">
+                <img src="images/logotxt.png" alt="logotxt" class="logotxt">
                 <!-- Header text -->
                 <ul>
-                    <li><a href="">
+                    <li><a href="cocktail.html">
                             <h2 class="home">Home</h2>
                         </a></li>
                     <li><a href="">
                             <h2 class="featured">Featured</h2>
                         </a></li>
-                    <li><a href="">
-                            <h2 class="abt-us">About Us</h2>
-                        </a></li>
+
 
 
                 </ul>
@@ -54,107 +55,444 @@
                 </ul>
 
             </div>
+            <div class="img" id="rellax" data-speed="-6"><img src="images/Group.png" alt="drunk" width="100%"></div>
 
+            <h1 class="mixHeader">Mix your own cocktail.</h1>
 
+            <p class="required">REQUIRED (UP TO 5 ENTRIES PER ITEM)</p>
 
-   
- 
-
-    <!-- MIXING PAGE CONTENTS -->
-
-    <div class="spirit-contain">
-        <h1 class="spirits" id="spirits">Spirits</h1>
-
-        <div class="spirit-choice">
-            <h2 class="spiritEnter" id="spiritEnter">Enter a spirit of your choice: </h2><input class="spiritInput"
-                type="text" name="spirit">
-            <input class="submitSpirit" type="submit" value="+">
-        </div>
-    </div>
+            <p class="optional">OPTIONAL</p>
 
 
 
 
 
 
-    <!-- Main JS -->
+            <!-- MIXING PAGE CONTENTS -->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="rellax.min.js"></script>
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-    <script src="mix.js"></script>
-    <script>
+            <div class="requiredFields">
+
+                <div class="spirit-contain">
+
+                    <h1 class="spirits" id="spirits">Spirits*
+                        <input class="nameInput" id="spiritInput" type="text" name="spirit">
+                        <input id="input-bttn" class="submitSpirit" type="submit" value="+">
+                    </h1>
+                    <br>
+
+                    <div class="spirit-choice">
+                        <h2 class="spiritEnter" id="spiritEnter">Enter a spirit of your choice: </h2><input
+                            class="spiritInput" id="spiritInput" type="text" name="spirit">
+                        <input id="input-bttn" class="submitSpirit" type="submit" value="+">
+                    </div>
+                </div>
+
+                <div class="mixer-contain">
+                    <h1 class="mixers" id="mixers">Mixers*</h1>
+
+                    <div class="mixer-choice">
+                        <h2 class="mixerEnter" id="mixerEnter">Enter a mixer of your choice: </h2>
+                        <input class="mixerInput" id="mixerInput" type="text" name="mixer">
+                        <input id="input-bttn" class="submitMixer" type="submit" value="+">
+                    </div>
+                </div>
+
+                <div class="garnish-contain">
+                    <h1 class="garnishes" id="garnishes">Aromatics</h1>
+
+                    <div class="garnish-choice">
+                        <h2 class="garnishEnter" id="garnishEnter">Enter a garnish of your choice: </h2>
+                        <input class="garnishInput" id="garnishInput" type="text" name="garnish">
+                        <input id="input-bttn" class="submitGarnish" type="submit" value="+">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="special-contain">
+                <h1 class="spec-instruct" id="spec-instruct">Special Instructions</h1>
+
+                <div class="special-choice">
+                    <h2 class="specialEnter" id="specialEnter">Include special instructions for your cocktail: </h2>
+                    <input class="specialInput" id="specialInput" type="text" name="special">
+                    <input id="input-bttn" class="submitSpecial" type="submit" value="+">
+                </div>
+            </div>
+
+            <div class="syrup-contain">
+                <h1 class="syrups" id="syrups">Syrups*</h1>
+
+                <div class="syrup-choice">
+                    <h2 class="syrupEnter" id="syrupEnter">Enter a syrup of your choice: </h2>
+                    <input class="syrupInput" id="syrupInput" type="text" name="syrup">
+                    <input id="input-bttn" class="submitSyrup" type="submit" value="+">
+                </div>
+            </div>
+
+            <div class="ice-contain">
+                <h1 class="ice" id="ice">Ice</h1>
+
+                <div class="ice-choice">
+                    <h2 class="iceEnter" id="iceEnter">Select an option below: </h2>
+
+                    <button class="yes">
+                        <p class="yestxt">YES</p>
+                    </button>
+                    <button class="no">
+                        <p class="notxt">NONE</p>
+                    </button>
+
+                </div>
+            </div>
 
 
-        
+            <a><button class="submit" id="submitFormButton">
+                    <p>SUBMIT YOUR COCKTAIL</p>
+                </button>
+            </a>
 
-        var rellax = new Rellax('#rellax');
-[]
+            <span data-tilt>
+                <div class="cocktail-summary" id="cocktail-summary">
+                    <h1 class="summ-header">Cocktail Summary</h1>
+                    <h2 class="summ-spirits">SPIRITS</h2>
+                    <p class="allSpirits" id="allSpirits"></p>
 
+                    <h2 class="summ-mixers">MIXERS</h2>
+                    <p class="allMixers" id="allMixers"></p>
 
+                    <h2 class="summ-syrups">SYRUPS</h2>
+                    <p class="allSyrups" id="allSyrups"></p>
 
-
-
-
-
-       
-
-
-
-        // Navbar hover 
-
-        $(".home").mouseenter(function () {
-
-            $(".home").css('transition', '0.2s ease-in-out')
-            $(".home").css('opacity', '0.5');
+                    <h2 class="summ-ice">ICE</h2>
+                    <p class="ice-yes" id="ice-yes">YES</p>
 
 
-        }).mouseleave(function () {
-            $(".home").css('opacity', '1');
-        })
+                    <h2 class="summ-garnish">GARNISH</h2>
+                    <p class="allGarnish" id="allGarnish"></p>
 
-        $(".featured").mouseenter(function () {
-
-            $(".featured").css('transition', '0.2s ease-in-out')
-            $(".featured").css('opacity', '0.5');
-
-        }).mouseleave(function () {
-            $(".featured").css('opacity', '1');
-        })
-
-        $(".abt-us").mouseenter(function () {
-
-            $(".abt-us").css('transition', '0.2s ease-in-out')
-            $(".abt-us").css('opacity', '0.5');
-
-        }).mouseleave(function () {
-            $(".abt-us").css('opacity', '1');
-        })
-
-        $(".login").mouseenter(function () {
-
-            $(".login").css('transition', '0.2s ease-in-out')
-            $(".login").css('opacity', '0.5');
-
-        }).mouseleave(function () {
-            $(".login").css('opacity', '1');
-        })
-
-        $(".signup").mouseenter(function () {
-
-            $(".signup").css('transition', '0.2s ease-in-out')
-            $(".signup").css('opacity', '0.5');
-
-        }).mouseleave(function () {
-            $(".signup").css('opacity', '1');
-        })
+                    <h2 class="summ-special">SPECIAL INSTRUCTIONS</h2>
+                    <p class="allSpecial" id="allSpecial"></p>
+                </div>
+            </span>
 
 
 
 
 
-    </script>
+            <!-- Main JS -->
+
+            <script src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+            <script src="tilt.jquery.js"></script>
+            <script src="rellax.min.js"></script>
+            <script>
+
+
+                $('.cocktail-summary').tilt({
+
+                    scale: 1.05
+
+                })
+
+
+                var rellax = new Rellax('#rellax');
+
+
+
+
+                window.onload = function delaySpirit() {
+                    $(".spirits").css('transition', '2.2s ease-in-out')
+                    $(".spirits").delay(1000).css('opacity', '1');
+                    $(".spirit-choice").css('transition', '3.2s ease-in-out')
+                    $(".spirit-choice").delay(1000).css('opacity', '1');
+
+
+                    $(".mixers").css('transition', '1.5s ease-in-out')
+                    $(".mixers").delay(1000).css('opacity', '1');
+                    $(".mixer-choice").css('transition', '2.5s ease-in-out')
+                    $(".mixer-choice").delay(1000).css('opacity', '1');
+
+                    $(".syrups").css('transition', '2s ease-in-out')
+                    $(".syrups").delay(1000).css('opacity', '1');
+                    $(".syrup-choice").css('transition', '3s ease-in-out')
+                    $(".syrup-choice").delay(1000).css('opacity', '1');
+
+                    $(".garnishes").css('transition', '2s ease-in-out')
+                    $(".garnishes").delay(1000).css('opacity', '1');
+                    $(".garnish-choice").css('transition', '3s ease-in-out')
+                    $(".garnish-choice").delay(1000).css('opacity', '1');
+
+                    $(".spec-instruct").css('transition', '2s ease-in-out')
+                    $(".spec-instruct").delay(1000).css('opacity', '1');
+                    $(".special-choice").css('transition', '3s ease-in-out')
+                    $(".special-choice").delay(1000).css('opacity', '1');
+
+
+                    $(".mixHeader").css('transition', '1.2s ease-in-out')
+                    $(".mixHeader").delay(1000).css('opacity', '1');
+
+
+                    $(".required").css('transition', '1.2s ease-in-out')
+                    $(".required").delay(1000).css('opacity', '0.5');
+
+                    $(".optional").css('transition', '1.2s ease-in-out')
+                    $(".optional").delay(1000).css('opacity', '0.5');
+
+                    $(".ice").css('transition', '1.2s ease-in-out')
+                    $(".ice").delay(1000).css('opacity', '1');
+                    $(".ice-choice").css('transition', '1.2s ease-in-out')
+                    $(".ice-choice").delay(1000).css('opacity', '1');
+
+
+                    $(".yes").css('transition', '1.2s ease-in-out')
+                    $(".yes").delay(1000).css('opacity', '1');
+                    $(".no").css('transition', '1.2s ease-in-out')
+                    $(".no").delay(1000).css('opacity', '1');
+
+                    $(".submit").css('transition', '1.2s ease-in-out')
+                    $(".submit").delay(1000).css('opacity', '1');
+
+                    $(".cocktail-summary").css('transition', '3.2s ease-in-out')
+                    $(".cocktail-summary").delay(1000).css('opacity', '1');
+                }
+
+
+
+
+
+
+
+
+
+
+                // Navbar hover 
+
+                $(".featured").mouseenter(function () {
+
+                    $(".featured").css('transition', '0.2s ease-in-out')
+                    $(".featured").css('opacity', '1');
+
+                }).mouseleave(function () {
+                    $(".featured").css('opacity', '0.5');
+                })
+
+                $(".abt-us").mouseenter(function () {
+
+                    $(".abt-us").css('transition', '0.2s ease-in-out')
+                    $(".abt-us").css('opacity', '1');
+
+                }).mouseleave(function () {
+                    $(".abt-us").css('opacity', '0.5');
+                })
+
+                $(".login").mouseenter(function () {
+
+                    $(".login").css('transition', '0.2s ease-in-out')
+                    $(".login").css('opacity', '1');
+
+                }).mouseleave(function () {
+                    $(".login").css('opacity', '0.5');
+                })
+
+                $(".signup").mouseenter(function () {
+
+                    $(".signup").css('transition', '0.2s ease-in-out')
+                    $(".signup").css('opacity', '0.5');
+
+                }).mouseleave(function () {
+                    $(".signup").css('opacity', '1');
+                })
+
+                $(".bttn-mix").mouseenter(function () {
+
+                    $(".bttn-mix").css('transition', '0.2s ease-in-out')
+                    $(".bttn-mix").css('background-color', '#26AC84');
+
+
+                }).mouseleave(function () {
+                    $(".bttn-mix").css('background-color', 'rgb(53, 212, 165)');
+                })
+
+
+
+
+                $(".no").mouseenter(function () {
+
+                    $(".no").css('transition', '0.2s ease-in-out')
+                    $(".no").css('background', 'rgb(53, 212, 165)');
+
+
+                }).mouseleave(function () {
+                    $(".no").css('background-color', 'rgb(36, 146, 113)');
+                })
+
+                $(".submit").mouseenter(function () {
+
+                    $(".submit").css('transition', '0.2s ease-in-out')
+                    $(".submit").css('background', 'rgb(36, 146, 113)');
+
+
+                }).mouseleave(function () {
+                    $(".submit").css('background-color', 'rgb(53, 212, 165)');
+                })
+
+
+
+
+
+
+
+
+
+                // Grabbing input values 
+
+                $('.submitSpirit').on('click', function () {
+                    var spiritChoice = document.getElementById("spiritInput").value;
+                    $('#allSpirits').append(spiritChoice + " ").hide()
+                        .fadeIn(1000);
+
+                    console.log(spiritChoice);
+                    document.getElementById("spiritInput").value = "";
+                })
+
+                // Remove spirit
+
+                $('#allSpirits').on('click', function () {
+                    $('#allSpirits').css('opacity', '0');
+                })
+
+                $('.submitMixer').on('click', function () {
+                    var mixerChoice = document.getElementById("mixerInput").value;
+                    $('#allMixers').append(mixerChoice + " ").hide()
+                        .fadeIn(1000);
+
+                    console.log(mixerChoice);
+                    document.getElementById("mixerInput").value = "";
+                })
+
+                // Remove mixer
+                $('#allMixers').on('click', function () {
+                    $('#allMixers').css('opacity', '0');
+                })
+
+                $('.submitSyrup').on('click', function () {
+                    var syrupChoice = document.getElementById("syrupInput").value;
+                    $('#allSyrups').append(syrupChoice + " ").hide()
+                        .fadeIn(1000);
+
+                    console.log(syrupChoice);
+                    document.getElementById("syrupInput").value = "";
+                })
+
+                // Remove syrups
+                $('#allSyrups').on('click', function () {
+                    $('#allSyrups').css('opacity', '0');
+                })
+
+                $('.submitGarnish').on('click', function () {
+                    var garnishChoice = document.getElementById("garnishInput").value;
+                    $('#allGarnish').append(garnishChoice + " ").hide()
+                        .fadeIn(1000);
+
+
+                    console.log(garnishChoice);
+                    document.getElementById("garnishInput").value = "";
+
+                })
+
+                // Remove garnish
+                $('#allGarnish').on('click', function () {
+                    $('#allGarnish').css('opacity', '0');
+                })
+
+                $('.submitSpecial').on('click', function () {
+                    var specialChoice = document.getElementById("specialInput").value;
+                    $('#allSpecial').append(specialChoice + " ").hide()
+                        .fadeIn(1000);
+
+                    console.log(specialChoice);
+                    document.getElementById("specialInput").value = "";
+
+                })
+
+                //Remove special 
+
+
+                $(".yes").mouseenter(function () {
+
+                    $(".yes").css('transition', '0.2s ease-in-out')
+                    $(".yes").css('background', 'rgb(53, 212, 165)');
+
+
+                }).mouseleave(function () {
+                    $(".yes").css('background-color', 'rgb(36, 146, 113)');
+                })
+
+
+
+
+                // ICE selection, value 'yes' by default
+                // ICE click 'NO'
+                $('.no').on('click', function () {
+                    $('.no').css('background', 'rgb(53, 212, 165)')
+                    $('.yes').css('background', 'rgb(36, 146, 113)');
+                    $("#ice-yes").css('transition', '0.2s ease-in-out')
+                    $("#ice-yes").css('opacity', '0')
+
+                    $(".no").mouseenter(function () {
+
+                        $(".no").css('transition', '0.2s ease-in-out')
+                        $(".no").css('background', 'rgb(53, 212, 165)');
+
+
+                    }).mouseleave(function () {
+                        $(".no").css('background-color', 'rgb(53, 212, 165)');
+                    })
+                    $(".yes").mouseenter(function () {
+
+                        $(".yes").css('transition', '0.2s ease-in-out')
+                        $(".yes").css('background', 'rgb(53, 212, 165)');
+
+
+                    }).mouseleave(function () {
+                        $(".yes").css('background-color', 'rgb(36, 146, 113)');
+                    })
+                })
+
+
+                // ICE click 'YES'
+                $('.yes').on('click', function () {
+                    $('.yes').css('background', 'rgb(53, 212, 165)')
+                    $('.no').css('background', 'rgb(36, 146, 113)');
+                    $("#ice-yes").css('transition', '0.2s ease-in-out')
+                    $("#ice-no").css('transition', '0.2s ease-in-out')
+                    $("#ice-no").css('opacity', '0')
+                    $("#ice-yes").css('opacity', '1')
+                    $(".yes").mouseenter(function () {
+
+                        $(".yes").css('transition', '0.2s ease-in-out')
+                        $(".yes").css('background', 'rgb(53, 212, 165)');
+
+
+                    }).mouseleave(function () {
+                        $(".yes").css('background-color', 'rgb(53, 212, 165)');
+                    })
+                    $(".no").mouseenter(function () {
+
+                        $(".no").css('transition', '0.2s ease-in-out')
+                        $(".no").css('background', 'rgb(53, 212, 165)');
+
+
+                    }).mouseleave(function () {
+                        $(".no").css('background-color', 'rgb(36, 146, 113)');
+                    })
+                })
+
+
+
+            </script>
+            <script src="./js/index.js" type="text/javascript"></script>
+
 </body>
 
 </html>
