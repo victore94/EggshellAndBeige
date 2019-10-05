@@ -73,7 +73,12 @@
             <div class="requiredFields">
 
                 <div class="spirit-contain">
-                    <h1 class="spirits" id="spirits">Spirits*</h1>
+
+                    <h1 class="spirits" id="spirits">Spirits*
+                        <input class="nameInput" id="spiritInput" type="text" name="spirit">
+                        <input id="input-bttn" class="submitSpirit" type="submit" value="+">
+                    </h1>
+                    <br>
 
                     <div class="spirit-choice">
                         <h2 class="spiritEnter" id="spiritEnter">Enter a spirit of your choice: </h2><input
@@ -141,7 +146,7 @@
             </div>
 
 
-            <a href="login.html"><button class="submit">
+            <a><button class="submit" id="submitFormButton">
                     <p>SUBMIT YOUR COCKTAIL</p>
                 </button>
             </a>
@@ -176,8 +181,8 @@
 
             <!-- Main JS -->
 
-            <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
             <script src="tilt.jquery.js"></script>
             <script src="rellax.min.js"></script>
             <script>
@@ -486,6 +491,8 @@
 
 
             </script>
+            <script src="./js/index.js" type="text/javascript"></script>
+
 </body>
 
 </html>
