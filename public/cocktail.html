@@ -119,10 +119,10 @@
         <p class="learn" id="learn">MORE ABOUT <strong>EBRIUS</strong></p>
     </button>
 
-    
+
     <span data-tilt></span><img src="images/purp.png" alt="drinks2" class="drink-img2"></span>
     <span data-tilt></span><img src="images/pink.png" alt="drinks3" class="drink-img3"></span>
-    <span data-tilt></span><img src="images/pink.png" alt="drinks3" class="drink-img3"></span>
+    <span data-tilt></span><img src="images/drink.png" alt="drinks4" class="drink-img4"></span>
 
 
 
@@ -160,19 +160,19 @@
     <script>
 
 
-        $('.drink-img').tilt({
-            scale: 1.05
+        $('.drink-img4').tilt({
+            scale: 1.65
         })
 
 
 
         $('.drink-img2').tilt({
-            scale: 1.25
+            scale: 1.65
 
         })
 
         $('.drink-img3').tilt({
-            scale: 1.25
+            scale: 1.65
 
         })
 
@@ -338,6 +338,33 @@
 
                 /* Check the location of each desired element */
                 $('.drink-img3').delay(2100).each(function (i) {
+
+                    var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+
+                        $(this).animate({ 'opacity': '1' }, 1200);
+
+
+                    }
+
+
+                });
+
+            });
+
+        });
+
+
+        $(document).ready(function () {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function () {
+
+                /* Check the location of each desired element */
+                $('.drink-img4').delay(2100).each(function (i) {
 
                     var bottom_of_object = $('.bottomtxt').offset().top + $('.bottomtxt').outerHeight() * 1.2;
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
